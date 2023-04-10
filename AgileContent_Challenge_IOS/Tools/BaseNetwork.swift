@@ -30,7 +30,9 @@ import Foundation
         
         func getUser(username: String) -> URLRequest {
             
-            let endpointParametre: String = endpoints.user.rawValue.replacingOccurrences(of: "username", with: String(username))
+            let user = username.replacingOccurrences(of: " " , with: "")
+            
+            let endpointParametre: String = endpoints.user.rawValue.replacingOccurrences(of: "username", with: String(user))
             
             let url: String = "\(server)\(endpointParametre)"
             
@@ -43,7 +45,9 @@ import Foundation
         
         func getUserRepositories(username: String) -> URLRequest {
             
-            let endpointParametre: String = endpoints.repositories.rawValue.replacingOccurrences(of: "username", with: String(username))
+            let user = username.replacingOccurrences(of: " " , with: "")
+            
+            let endpointParametre: String = endpoints.repositories.rawValue.replacingOccurrences(of: "username", with: String(user))
             
             let url: String = "\(server)\(endpointParametre)"
             
