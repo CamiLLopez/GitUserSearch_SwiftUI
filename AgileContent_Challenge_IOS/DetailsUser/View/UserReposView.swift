@@ -18,7 +18,6 @@ struct UserReposView: View {
             VStack{
                 Button {
                     viewModel.status = .none
-                    RootView()
                 } label: {
                     Image(systemName: "chevron.backward")
                     Text("Back")
@@ -45,6 +44,7 @@ struct UserReposView: View {
                         .font(.subheadline)
                         .opacity(0.8)
                 }
+                
             }
             List{
                 if let repos = viewModel.repos {
@@ -54,8 +54,7 @@ struct UserReposView: View {
                     }
                 }
             }
-            .environment(\.defaultMinListRowHeight, 70)
-            
+            .environment(\.defaultMinListRowHeight, 70)            
         }
     }
 }

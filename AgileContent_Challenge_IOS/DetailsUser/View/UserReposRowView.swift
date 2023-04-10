@@ -18,12 +18,9 @@ struct UserReposRowView: View {
             Text("\(repo.name)")
                .bold()
                .font(.headline)
-               .padding([.leading], 10)
-               .padding([.bottom], 2)
            if let language = repo.language{
                Text(language)
                    .font(.subheadline)
-                   .padding([.leading], 10)
                    .foregroundColor(.gray)
            }
         }
