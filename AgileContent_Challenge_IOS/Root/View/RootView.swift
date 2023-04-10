@@ -10,21 +10,25 @@ import SwiftUI
 struct RootView: View {
     
     @EnvironmentObject var viewModel: SearchUserViewModel
-
+    
     var body: some View {
         
-        switch viewModel.status{
-            
-        case .none:
-            SearchUserView(viewModel: viewModel)
-        case .loading:
-            Text("Loading")
-            //SpinnerView()
-        case .error(error: let errorSring):
-            Text("Error Aqui \(errorSring)")
-        case .ready:
-            UserReposView(viewModel: viewModel)
-        }
+        VStack{
+                switch viewModel.status{
+                    
+                case .none:
+                    SearchUserView(viewModel: viewModel)
+                case .loading:
+                    Text("Loading...")
+                        .font(.title2)
+                        .foregroundColor(.blue)
+                case .error(error: let errorString):
+                    AlertView(viewModel: viewModel, message: errorString)
+                case .ready:
+                    UserReposView(viewModel: viewModel)
+                }
+                
+            }
     }
 }
 

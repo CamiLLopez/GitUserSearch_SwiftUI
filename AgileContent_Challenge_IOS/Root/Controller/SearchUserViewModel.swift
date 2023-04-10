@@ -40,7 +40,7 @@ final class SearchUserViewModel: ObservableObject {
             .sink { completion in
                 switch completion{
                 case .failure:
-                    self.status = Status.error(error: "Error to get user from API")
+                    self.status = Status.error(error: "User not found. Please enter another name")
                 case .finished:
                     self.status = .ready
                     self.getReposByUsername()
@@ -70,7 +70,7 @@ final class SearchUserViewModel: ObservableObject {
             .sink { completion in
                 switch completion{
                 case .failure:
-                    self.status = Status.error(error: "Error in GitHub repos")
+                    self.status = Status.error(error: "Error getting GitHub repositories, please try again later")
                 case .finished:
                     self.status = .ready
                 }

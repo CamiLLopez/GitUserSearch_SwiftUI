@@ -19,9 +19,6 @@
 		DFC2EA1829E028A4004B4AA8 /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA1729E028A4004B4AA8 /* SearchUserView.swift */; };
 		DFC2EA1929E028A4004B4AA8 /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA1729E028A4004B4AA8 /* SearchUserView.swift */; };
 		DFC2EA1A29E028A4004B4AA8 /* SearchUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA1729E028A4004B4AA8 /* SearchUserView.swift */; };
-		DFC2EA1C29E02B85004B4AA8 /* ResponseGitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA1B29E02B85004B4AA8 /* ResponseGitHubModel.swift */; };
-		DFC2EA1D29E02B85004B4AA8 /* ResponseGitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA1B29E02B85004B4AA8 /* ResponseGitHubModel.swift */; };
-		DFC2EA1E29E02B85004B4AA8 /* ResponseGitHubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA1B29E02B85004B4AA8 /* ResponseGitHubModel.swift */; };
 		DFC2EA2029E02BC6004B4AA8 /* GitHubRepositoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA1F29E02BC6004B4AA8 /* GitHubRepositoriesModel.swift */; };
 		DFC2EA2129E02BC6004B4AA8 /* GitHubRepositoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA1F29E02BC6004B4AA8 /* GitHubRepositoriesModel.swift */; };
 		DFC2EA2229E02BC6004B4AA8 /* GitHubRepositoriesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA1F29E02BC6004B4AA8 /* GitHubRepositoriesModel.swift */; };
@@ -37,18 +34,15 @@
 		DFC2EA3629E16B2E004B4AA8 /* UserReposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA3529E16B2E004B4AA8 /* UserReposView.swift */; };
 		DFC2EA3729E16B2E004B4AA8 /* UserReposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA3529E16B2E004B4AA8 /* UserReposView.swift */; };
 		DFC2EA3829E16B2E004B4AA8 /* UserReposView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA3529E16B2E004B4AA8 /* UserReposView.swift */; };
-		DFC2EA3A29E16B47004B4AA8 /* UserReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA3929E16B47004B4AA8 /* UserReposViewModel.swift */; };
-		DFC2EA3B29E16B47004B4AA8 /* UserReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA3929E16B47004B4AA8 /* UserReposViewModel.swift */; };
-		DFC2EA3C29E16B47004B4AA8 /* UserReposViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA3929E16B47004B4AA8 /* UserReposViewModel.swift */; };
 		DFC2EA4229E2ABD3004B4AA8 /* UserReposRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA4129E2ABD3004B4AA8 /* UserReposRowView.swift */; };
 		DFC2EA4329E2ABD3004B4AA8 /* UserReposRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA4129E2ABD3004B4AA8 /* UserReposRowView.swift */; };
 		DFC2EA4429E2ABD3004B4AA8 /* UserReposRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA4129E2ABD3004B4AA8 /* UserReposRowView.swift */; };
 		DFC2EA4629E401E0004B4AA8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA4529E401E0004B4AA8 /* RootView.swift */; };
 		DFC2EA4729E401E0004B4AA8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA4529E401E0004B4AA8 /* RootView.swift */; };
 		DFC2EA4829E401E0004B4AA8 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA4529E401E0004B4AA8 /* RootView.swift */; };
-		DFC2EA4A29E40B3F004B4AA8 /* ReposResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA4929E40B3F004B4AA8 /* ReposResponseModel.swift */; };
-		DFC2EA4B29E40B3F004B4AA8 /* ReposResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA4929E40B3F004B4AA8 /* ReposResponseModel.swift */; };
-		DFC2EA4C29E40B3F004B4AA8 /* ReposResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA4929E40B3F004B4AA8 /* ReposResponseModel.swift */; };
+		DFC2EA5529E43ECD004B4AA8 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA5429E43ECD004B4AA8 /* AlertView.swift */; };
+		DFC2EA5629E43ECD004B4AA8 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA5429E43ECD004B4AA8 /* AlertView.swift */; };
+		DFC2EA5729E43ECD004B4AA8 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA5429E43ECD004B4AA8 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,17 +74,15 @@
 		DF83353229DE02230069DC41 /* AgileContent_Challenge_IOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgileContent_Challenge_IOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		DFC2EA1329E0215C004B4AA8 /* BaseNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNetwork.swift; sourceTree = "<group>"; };
 		DFC2EA1729E028A4004B4AA8 /* SearchUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserView.swift; sourceTree = "<group>"; };
-		DFC2EA1B29E02B85004B4AA8 /* ResponseGitHubModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseGitHubModel.swift; sourceTree = "<group>"; };
 		DFC2EA1F29E02BC6004B4AA8 /* GitHubRepositoriesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepositoriesModel.swift; sourceTree = "<group>"; };
 		DFC2EA2329E02C03004B4AA8 /* SearchUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchUserViewModel.swift; sourceTree = "<group>"; };
 		DFC2EA2C29E02DD2004B4AA8 /* GitHubUserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubUserModel.swift; sourceTree = "<group>"; };
 		DFC2EA3029E03229004B4AA8 /* StatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusModel.swift; sourceTree = "<group>"; };
 		DFC2EA3429E073D2004B4AA8 /* AgileContent-Challenge-IOS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "AgileContent-Challenge-IOS-Info.plist"; sourceTree = SOURCE_ROOT; };
 		DFC2EA3529E16B2E004B4AA8 /* UserReposView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReposView.swift; sourceTree = "<group>"; };
-		DFC2EA3929E16B47004B4AA8 /* UserReposViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReposViewModel.swift; sourceTree = "<group>"; };
 		DFC2EA4129E2ABD3004B4AA8 /* UserReposRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReposRowView.swift; sourceTree = "<group>"; };
 		DFC2EA4529E401E0004B4AA8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
-		DFC2EA4929E40B3F004B4AA8 /* ReposResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReposResponseModel.swift; sourceTree = "<group>"; };
+		DFC2EA5429E43ECD004B4AA8 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,7 +182,6 @@
 		DFC2EA0A29E020F4004B4AA8 /* DetailsUser */ = {
 			isa = PBXGroup;
 			children = (
-				DFC2EA1029E02126004B4AA8 /* Controller */,
 				DFC2EA0F29E0211E004B4AA8 /* Model */,
 				DFC2EA0E29E02113004B4AA8 /* View */,
 			);
@@ -218,25 +209,16 @@
 			isa = PBXGroup;
 			children = (
 				DFC2EA1F29E02BC6004B4AA8 /* GitHubRepositoriesModel.swift */,
-				DFC2EA4929E40B3F004B4AA8 /* ReposResponseModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		DFC2EA1029E02126004B4AA8 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-				DFC2EA3929E16B47004B4AA8 /* UserReposViewModel.swift */,
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		DFC2EA1129E02131004B4AA8 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
 				DFC2EA1329E0215C004B4AA8 /* BaseNetwork.swift */,
-				DFC2EA1B29E02B85004B4AA8 /* ResponseGitHubModel.swift */,
 				DFC2EA3029E03229004B4AA8 /* StatusModel.swift */,
+				DFC2EA5429E43ECD004B4AA8 /* AlertView.swift */,
 			);
 			path = Tools;
 			sourceTree = "<group>";
@@ -411,10 +393,8 @@
 				DFC2EA1429E0215C004B4AA8 /* BaseNetwork.swift in Sources */,
 				DFC2EA2D29E02DD2004B4AA8 /* GitHubUserModel.swift in Sources */,
 				DF83351629DE02220069DC41 /* AgileContent_Challenge_IOSApp.swift in Sources */,
-				DFC2EA1C29E02B85004B4AA8 /* ResponseGitHubModel.swift in Sources */,
 				DFC2EA4629E401E0004B4AA8 /* RootView.swift in Sources */,
-				DFC2EA4A29E40B3F004B4AA8 /* ReposResponseModel.swift in Sources */,
-				DFC2EA3A29E16B47004B4AA8 /* UserReposViewModel.swift in Sources */,
+				DFC2EA5529E43ECD004B4AA8 /* AlertView.swift in Sources */,
 				DFC2EA2429E02C03004B4AA8 /* SearchUserViewModel.swift in Sources */,
 				DFC2EA3629E16B2E004B4AA8 /* UserReposView.swift in Sources */,
 			);
@@ -431,10 +411,8 @@
 				DFC2EA1529E0215C004B4AA8 /* BaseNetwork.swift in Sources */,
 				DFC2EA2E29E02DD2004B4AA8 /* GitHubUserModel.swift in Sources */,
 				DF83352729DE02230069DC41 /* AgileContent_Challenge_IOSTests.swift in Sources */,
-				DFC2EA1D29E02B85004B4AA8 /* ResponseGitHubModel.swift in Sources */,
 				DFC2EA4729E401E0004B4AA8 /* RootView.swift in Sources */,
-				DFC2EA4B29E40B3F004B4AA8 /* ReposResponseModel.swift in Sources */,
-				DFC2EA3B29E16B47004B4AA8 /* UserReposViewModel.swift in Sources */,
+				DFC2EA5629E43ECD004B4AA8 /* AlertView.swift in Sources */,
 				DFC2EA2529E02C03004B4AA8 /* SearchUserViewModel.swift in Sources */,
 				DFC2EA3729E16B2E004B4AA8 /* UserReposView.swift in Sources */,
 			);
@@ -449,10 +427,8 @@
 				DF83353129DE02230069DC41 /* AgileContent_Challenge_IOSUITests.swift in Sources */,
 				DFC2EA2F29E02DD2004B4AA8 /* GitHubUserModel.swift in Sources */,
 				DFC2EA3829E16B2E004B4AA8 /* UserReposView.swift in Sources */,
+				DFC2EA5729E43ECD004B4AA8 /* AlertView.swift in Sources */,
 				DFC2EA2229E02BC6004B4AA8 /* GitHubRepositoriesModel.swift in Sources */,
-				DFC2EA4C29E40B3F004B4AA8 /* ReposResponseModel.swift in Sources */,
-				DFC2EA3C29E16B47004B4AA8 /* UserReposViewModel.swift in Sources */,
-				DFC2EA1E29E02B85004B4AA8 /* ResponseGitHubModel.swift in Sources */,
 				DFC2EA2629E02C03004B4AA8 /* SearchUserViewModel.swift in Sources */,
 				DFC2EA4829E401E0004B4AA8 /* RootView.swift in Sources */,
 				DFC2EA3329E03229004B4AA8 /* StatusModel.swift in Sources */,

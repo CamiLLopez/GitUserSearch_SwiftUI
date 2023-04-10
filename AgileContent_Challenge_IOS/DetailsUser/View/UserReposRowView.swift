@@ -14,6 +14,7 @@ struct UserReposRowView: View {
     var body: some View {
         
         VStack(alignment: .leading){
+            
             Text("\(repo.name)")
                .bold()
                .font(.headline)

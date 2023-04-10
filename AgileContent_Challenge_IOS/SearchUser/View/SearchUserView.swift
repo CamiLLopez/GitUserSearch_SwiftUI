@@ -14,7 +14,7 @@ struct SearchUserView: View {
     
     var body: some View {
         
-        VStack{
+        NavigationStack{
             
             TextField("Insert GitHub Username", text: $usernameTextField)
                 .padding(10)
@@ -31,8 +31,9 @@ struct SearchUserView: View {
                 Text("Search")
                     .font(.title2)
                     .foregroundColor(.white)
-                    .frame(width: 150, height: 50)
-                    .background(Color.teal)
+                    .frame(width: 120, height: 40)
+                    .background(Color.blue)
+                    .opacity(0.9)
                     .cornerRadius(10)
             }
             .padding(.top, 20)

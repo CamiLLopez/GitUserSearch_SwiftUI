@@ -16,6 +16,17 @@ struct UserReposView: View {
         
         VStack{
             
+            Button {
+                viewModel.status = .none
+                RootView()
+            } label: {
+                Text("Back")
+                    .font(.headline)
+                    .foregroundColor(.blue)
+                    .frame(width: 50, height: 50)
+                    .padding(.trailing, 320)
+            }
+           
             if let avatarImg = viewModel.user?.avatar_url,
                let username = viewModel.user?.login{
             AsyncImage(url: URL(string:"\(avatarImg)")){
