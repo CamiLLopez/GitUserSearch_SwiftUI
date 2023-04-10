@@ -18,9 +18,8 @@ struct SearchUserView: View {
             
             TextField("Username", text: $usernameTextField)
                 .padding(10)
-                .background(.white)
+                .background(.regularMaterial)
                 .cornerRadius(10)
-                .shadow(radius: 3, x:3, y:3)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
                 .frame(width: 350, height: 100)
@@ -34,7 +33,7 @@ struct SearchUserView: View {
                     .frame(width: 120, height: 40)
                     .cornerRadius(10)
             }
-            .padding(.top, 20)
+            .padding(.top, 15)
         }
     }
 }

@@ -15,18 +15,17 @@ struct UserReposView: View {
     var body: some View {
         
         VStack{
-            VStack{
-                Button {
-                    viewModel.status = .none
-                } label: {
-                    Image(systemName: "chevron.backward")
-                    Text("Back")
-                        .font(.headline)
-                        .foregroundColor(.blue)
-                        .frame(width: 50, height: 50)
-                        .padding(.trailing, 300)
-                }
-                
+            Button {
+                viewModel.status = .none
+            } label: {
+                Image(systemName: "chevron.backward")
+                Text("Back")
+                    .font(.title3)
+                    .foregroundColor(.blue)
+                    .frame(width: 50, height: 50)
+                    .padding(.trailing, 300)
+            }
+            
                 if let avatarImg = viewModel.user?.avatar_url,
                    let username = viewModel.user?.login{
                     AsyncImage(url: URL(string:"\(avatarImg)")){
@@ -34,18 +33,16 @@ struct UserReposView: View {
                         Image
                             .resizable()
                             .aspectRatio(contentMode: .fill)
-                            .cornerRadius(50)
-                            .padding([.leading, .trailing], 50)
-                            .frame(width:100, height: 100)
+                            .cornerRadius(75)
+                            .frame(width:150, height: 150)
                     }placeholder:{
                         Text("Loading..")
                     }
                     Text("\(username)")
-                        .font(.subheadline)
+                        .font(.headline)
                         .opacity(0.8)
                 }
-                
-            }
+            
             List{
                 if let repos = viewModel.repos {
                     
@@ -56,6 +53,8 @@ struct UserReposView: View {
             }
             .environment(\.defaultMinListRowHeight, 70)            
         }
+        .background(.regularMaterial)
+        .padding(.bottom, 5)
     }
 }
 

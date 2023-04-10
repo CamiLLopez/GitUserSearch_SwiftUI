@@ -27,7 +27,6 @@ struct RootView: View {
                 case .ready:
                     UserReposView(viewModel: viewModel)
                 }
-                
             }
     }
 }
