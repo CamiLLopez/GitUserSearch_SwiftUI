@@ -13,17 +13,17 @@ struct SearchUserView: View {
     @State var usernameTextField: String = ""
     
     var body: some View {
-        
+            
         NavigationStack{
             
             TextField("Username", text: $usernameTextField)
                 .padding(10)
                 .background(.regularMaterial)
-                .cornerRadius(10)
+                .cornerRadius(5)
                 .textInputAutocapitalization(.never)
                 .autocorrectionDisabled()
                 .frame(width: 350, height: 100)
-            
+          
             Button {
                 viewModel.getGitHubUser(username: usernameTextField)
             } label: {
@@ -33,8 +33,12 @@ struct SearchUserView: View {
                     .frame(width: 120, height: 40)
                     .cornerRadius(10)
             }
+    
             .padding(.top, 15)
+            .navigationBarTitle(Text("GitHub Viewer"), displayMode: .inline)
         }
+        
+       
     }
 }
 
