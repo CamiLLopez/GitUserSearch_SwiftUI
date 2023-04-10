@@ -15,36 +15,37 @@ struct UserReposView: View {
     var body: some View {
         
         VStack{
-            
-            Button {
-                viewModel.status = .none
-                RootView()
-            } label: {
-                Text("Back")
-                    .font(.headline)
-                    .foregroundColor(.blue)
-                    .frame(width: 50, height: 50)
-                    .padding(.trailing, 320)
+            VStack{
+                Button {
+                    viewModel.status = .none
+                    RootView()
+                } label: {
+                    Image(systemName: "chevron.backward")
+                    Text("Back")
+                        .font(.headline)
+                        .foregroundColor(.blue)
+                        .frame(width: 50, height: 50)
+                        .padding(.trailing, 300)
+                }
+                
+                if let avatarImg = viewModel.user?.avatar_url,
+                   let username = viewModel.user?.login{
+                    AsyncImage(url: URL(string:"\(avatarImg)")){
+                        Image in
+                        Image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                            .cornerRadius(50)
+                            .padding([.leading, .trailing], 50)
+                            .frame(width:100, height: 100)
+                    }placeholder:{
+                        Text("Loading..")
+                    }
+                    Text("\(username)")
+                        .font(.subheadline)
+                        .opacity(0.8)
+                }
             }
-           
-            if let avatarImg = viewModel.user?.avatar_url,
-               let username = viewModel.user?.login{
-            AsyncImage(url: URL(string:"\(avatarImg)")){
-                Image in
-                Image
-                    .resizable()
-                    .aspectRatio(contentMode: .fill)
-                    .cornerRadius(50)
-                    .padding([.leading, .trailing], 50)
-                    .frame(width:100, height: 100)
-            }placeholder:{
-                Text("Loading..")
-            }
-                Text("\(username)")
-                    .font(.title2)
-                    .opacity(0.8)
-            }
-           
             List{
                 if let repos = viewModel.repos {
                     
@@ -53,6 +54,8 @@ struct UserReposView: View {
                     }
                 }
             }
+            .environment(\.defaultMinListRowHeight, 70)
+            
         }
     }
 }

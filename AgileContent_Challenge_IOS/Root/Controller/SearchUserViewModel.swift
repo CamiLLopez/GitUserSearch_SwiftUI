@@ -19,6 +19,12 @@ final class SearchUserViewModel: ObservableObject {
     var suscriptors = Set<AnyCancellable>()
     var username: String = ""
     
+    init(testingMode: Bool = false){
+        if(testingMode){
+            getGitHubUserTesting()
+        }
+        
+    }
     
     func getGitHubUser(username: String){
         
@@ -79,5 +85,22 @@ final class SearchUserViewModel: ObservableObject {
             }
             .store(in: &suscriptors)
 
+    }
+    
+    
+    func getGitHubUserTesting(){
+        
+        let user = GitHubUser(login: "CamiLLopez", id: 53200676, avatar_url: "https://avatars.githubusercontent.com/u/53200676?v=4", url: "https://api.github.com/users/CamiLLopez", repos_url: "https://api.github.com/users/CamiLLopez/repos", public_repos: 17)
+        
+    }
+    
+    func getReposByUsernameTesting(){
+        
+        let repo = GitHubRepositories(id: 383594947, name: "ejerciciosPython", gitHubRepoPrivate: false, description: "", fork: false, url: "https://api.github.com/repos/CamiLLopez/ejerciciosPython", language: "Python")
+        let repo1 = GitHubRepositories(id: 482874368, name: "FCC", gitHubRepoPrivate: false, description: "", fork: false, url: "https://api.github.com/repos/CamiLLopez/FCC", language: "JavaScript")
+        let repo2 = GitHubRepositories(id: 622333320, name: "KCIOSSwiftUI", gitHubRepoPrivate: false, description: "", fork: false, url: "https://api.github.com/repos/CamiLLopez/KCIOSSwiftUI", language: "Swift")
+       
+        
+        self.repos = [repo, repo1, repo2]
     }
 }

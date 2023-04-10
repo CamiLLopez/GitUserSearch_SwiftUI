@@ -7,6 +7,8 @@
 
 import XCTest
 @testable import AgileContent_Challenge_IOS
+import Combine
+
 
 final class AgileContent_Challenge_IOSTests: XCTestCase {
 
@@ -17,20 +19,69 @@ final class AgileContent_Challenge_IOSTests: XCTestCase {
     override func tearDownWithError() throws {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
+    
+    
+    func testUserRepos () throws{
+        
+        var suscriptor = Set<AnyCancellable>()
+        let expectation = self.expectation(description: "User search")
+        
+        
+        let viewModel = SearchUserViewModel(testingMode: true)
+        XCTAssertNotNil(viewModel)
+        
+        viewModel.user.publisher
+            .sink { completion in
+                switch completion{
+                case .finished:
+                    XCTAssertEqual(1, 1)
+                    expectation.fulfill()
+                case .failure:
+                    XCTAssertEqual(1, 2)
+                    expectation.fulfill()
+                }
+            } receiveValue: { user in
+                
+                XCTAssertNotNil(user)
+               
+            }
+            .store(in: &suscriptor)
+        
+        viewModel.getGitHubUserTesting()
+        
+        self.waitForExpectations(timeout: 10)
 
-    func testExample() throws {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-        // Any test you write for XCTest can be annotated as throws and async.
-        // Mark your test throws to produce an unexpected failure when your test encounters an uncaught error.
-        // Mark your test async to allow awaiting for asynchronous code to complete. Check the results with assertions afterwards.
     }
-
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testReposByUser () throws{
+        
+        var suscriptor = Set<AnyCancellable>()
+        let expectation = self.expectation(description: "Repos List")
+        
+        
+        let viewModel = SearchUserViewModel(testingMode: true)
+        XCTAssertNotNil(viewModel)
+        
+        viewModel.repos.publisher
+            .sink { completion in
+                switch completion{
+                case .finished:
+                    XCTAssertEqual(1, 1)
+                    expectation.fulfill()
+                case .failure:
+                    XCTAssertEqual(1, 2)
+                    expectation.fulfill()
+                }
+            } receiveValue: { repos in
+                
+                XCTAssertNotNil(repos)
+                XCTAssertGreaterThanOrEqual(3, repos.count)
+            }
+            .store(in: &suscriptor)
+        
+        viewModel.getReposByUsernameTesting()
+        
+        self.waitForExpectations(timeout: 10)
     }
 
 }

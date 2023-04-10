@@ -43,6 +43,8 @@
 		DFC2EA5529E43ECD004B4AA8 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA5429E43ECD004B4AA8 /* AlertView.swift */; };
 		DFC2EA5629E43ECD004B4AA8 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA5429E43ECD004B4AA8 /* AlertView.swift */; };
 		DFC2EA5729E43ECD004B4AA8 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA5429E43ECD004B4AA8 /* AlertView.swift */; };
+		DFC2EA5A29E45707004B4AA8 /* GitHubRepoModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA5829E45707004B4AA8 /* GitHubRepoModelTest.swift */; };
+		DFC2EA5D29E4588F004B4AA8 /* GitUserModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC2EA5C29E4588F004B4AA8 /* GitUserModelTest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +85,8 @@
 		DFC2EA4129E2ABD3004B4AA8 /* UserReposRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserReposRowView.swift; sourceTree = "<group>"; };
 		DFC2EA4529E401E0004B4AA8 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
 		DFC2EA5429E43ECD004B4AA8 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		DFC2EA5829E45707004B4AA8 /* GitHubRepoModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitHubRepoModelTest.swift; sourceTree = "<group>"; };
+		DFC2EA5C29E4588F004B4AA8 /* GitUserModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitUserModelTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +161,8 @@
 			isa = PBXGroup;
 			children = (
 				DF83352629DE02230069DC41 /* AgileContent_Challenge_IOSTests.swift */,
+				DFC2EA5829E45707004B4AA8 /* GitHubRepoModelTest.swift */,
+				DFC2EA5C29E4588F004B4AA8 /* GitUserModelTest.swift */,
 			);
 			path = AgileContent_Challenge_IOSTests;
 			sourceTree = "<group>";
@@ -410,6 +416,8 @@
 				DFC2EA2129E02BC6004B4AA8 /* GitHubRepositoriesModel.swift in Sources */,
 				DFC2EA1529E0215C004B4AA8 /* BaseNetwork.swift in Sources */,
 				DFC2EA2E29E02DD2004B4AA8 /* GitHubUserModel.swift in Sources */,
+				DFC2EA5A29E45707004B4AA8 /* GitHubRepoModelTest.swift in Sources */,
+				DFC2EA5D29E4588F004B4AA8 /* GitUserModelTest.swift in Sources */,
 				DF83352729DE02230069DC41 /* AgileContent_Challenge_IOSTests.swift in Sources */,
 				DFC2EA4729E401E0004B4AA8 /* RootView.swift in Sources */,
 				DFC2EA5629E43ECD004B4AA8 /* AlertView.swift in Sources */,
