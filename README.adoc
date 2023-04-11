@@ -93,8 +93,5 @@ It has two screens, the first allows you to search for a GitHub User and get the
 
 image::challenge-screens.png[Reference, align="center"]
 
-
-
-
 This challenge was created using SwiftUI because of the adaptability to changes and in order to show a different technology that UIKit. 
 
